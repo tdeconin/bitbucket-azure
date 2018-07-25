@@ -6,5 +6,5 @@ RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ xenia
 RUN curl -L https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 RUN apt-get install apt-transport-https
 RUN apt-get update && apt-get install azure-cli
-RUN curl https://raw.githubusercontent.com/kubernetes/helm/release-2.8/scripts/get | bash
+RUN curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
 
