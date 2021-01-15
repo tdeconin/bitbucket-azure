@@ -14,3 +14,4 @@ RUN mv linux-amd64/helm /usr/local/bin/helm3
 RUN wget -O geckodriver.tgz https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
 RUN tar xvf geckodriver.tgz
 RUN mv geckodriver /usr/local/bin/geckodriver
+RUN az aks install-cli
